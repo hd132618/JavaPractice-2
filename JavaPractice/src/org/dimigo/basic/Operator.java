@@ -20,6 +20,10 @@ public class Operator {
 		{
 			System.out.println("평행사변형이 사다리꼴 보다 " + (s2-s1) +" 더 큽니다.");
 		}
+		else
+		{
+			System.out.println("같다");
+		}
 	}
 
 }
