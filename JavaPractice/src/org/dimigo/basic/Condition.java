@@ -6,38 +6,34 @@ public class Condition {
 		String vehicleType;
 		int distance;
 		int cost;
-		
+
 		vehicleType = "고속버스";
 		distance = 10;
-		
-		switch(vehicleType)
-		{
+
+		switch (vehicleType) {
 		case "고속버스":
 			cost = 850;
-			if(distance>10)
-			{
-				cost += ((distance-1)/10)*300;
+			if (distance > 10) {
+				cost += ((distance - 1) / 10) * 300;
 			}
 			break;
 		case "경차":
 			cost = 300;
-			if(distance>10)
-			{
-				cost += ((distance-1)/10)*200;
+			if (distance > 10) {
+				cost += ((distance - 1) / 10) * 200;
 			}
 			break;
 		case "그 외":
 			cost = 600;
-			if(distance>10)
-			{
-				cost += ((distance-1)/10)*200;
+			if (distance > 10) {
+				cost += ((distance - 1) / 10) * 200;
 			}
 			break;
 		default:
 			cost = 0;
 			System.out.println("?");
 			break;
-				
+
 		}
 
 		System.out.println("<< 고속버스 통행료 계산 >>");
