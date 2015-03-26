@@ -8,7 +8,7 @@ public class Condition {
 		int cost;
 
 		vehicleType = "고속버스";
-		distance = 10;
+		distance = 21;
 
 		switch (vehicleType) {
 		case "고속버스":
