@@ -18,7 +18,8 @@ public class Car {
 	private String color;
 	private int maxSpeed;
 	private int price;
-
+	
+	
 	public String getCompany() {
 		return company;
 	}
