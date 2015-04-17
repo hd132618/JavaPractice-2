@@ -1,3 +1,4 @@
+
 /**
  * 
  */
@@ -12,18 +13,18 @@ package org.dimigo.oop;
  * @author	gandd_000
  * @version	1.0
  */
-public class Car2{
+public class Car3{
 	private String company;
 	private String model;
 	private String color;
 	private int maxSpeed;
 	private int price;
 
-	public Car2() {
+	public Car3() {
 
 	}
 
-	public Car2(String company, String model, String color, int maxSpeed, int price) {
+	public Car3(String company, String model, String color, int maxSpeed, int price) {
 		this.company = company;
 		this.model = model;
 		this.color = color;
@@ -31,18 +32,12 @@ public class Car2{
 		this.price = price;
 	}
 
-
-	public Car2(String company, String model, String color, int maxSpeed) {
-		this.company = company;
-		this.model = model;
-		this.color = color;
-		this.maxSpeed = maxSpeed;
+	public Car3(String company, String model, String color, int maxSpeed) {
+		this(company, model, color, maxSpeed, 0);
 	}
 
-	public Car2(String company, String model, String color) {
-		this.company = company;
-		this.model = model;
-		this.color = color;
+	public Car3(String company, String model, String color) {
+		this(company, model, color, 0);
 	}
 	
 	public void printCar()
@@ -55,5 +50,5 @@ public class Car2{
 		System.out.println("가격 : " + String.format("%,d", price) + "원");
 		System.out.println();
 	}
-
 }
+

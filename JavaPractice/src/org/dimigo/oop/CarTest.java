@@ -18,9 +18,9 @@ public class CarTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Car2 car1 = new Car2("현대자동차", "제네시스", "검정색", 225, 50000000);
-		Car2 car2 = new Car2("기아자동차", "K7", "흰색", 246);
-		Car2 car3 = new Car2("삼성자동차", "SM7", "회색");
+		Car3 car1 = new Car3("현대자동차", "제네시스", "검정색", 225, 50000000);
+		Car3 car2 = new Car3("기아자동차", "K7", "흰색", 246);
+		Car3 car3 = new Car3("삼성자동차", "SM7", "회색");
 		
 //		car1.setCompany("현대자동차");
 //		car1.setModel("제네시스");
@@ -60,23 +60,8 @@ public class CarTest {
 //		System.out.println("최대속도 : " + car3.getMaxSpped() + "km");
 //		System.out.println("가격 : " + String.format("%,d", car3.getPrice()) + "원");
 
-		System.out.println("<< 자동차 목록 >>"); 
-		System.out.println("제조사명 : " + car1.company);
-		System.out.println("모델명 : " +  car1.model);
-		System.out.println("색상 : " + car1.color);
-		System.out.println("최대속도 : " + car1.maxSpeed + "km");
-		System.out.println("가격 : " + String.format("%,d", car1.price) + "원");
-		System.out.println();
-		System.out.println("제조사명 : " + car2.company);
-		System.out.println("모델명 : " +  car2.model);
-		System.out.println("색상 : " + car2.color);
-		System.out.println("최대속도 : " + car2.maxSpeed + "km");
-		System.out.println("가격 : " + String.format("%,d", car2.price) + "원");
-		System.out.println();
-		System.out.println("제조사명 : " + car3.company);
-		System.out.println("모델명 : " +  car3.model);
-		System.out.println("색상 : " + car3.color);
-		System.out.println("최대속도 : " + car3.maxSpeed + "km");
-		System.out.println("가격 : " + String.format("%,d", car3.price) + "원");
+		car1.printCar();
+		car2.printCar();
+		car3.printCar();
 	}
 }
