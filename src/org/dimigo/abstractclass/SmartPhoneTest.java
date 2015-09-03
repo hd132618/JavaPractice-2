@@ -20,7 +20,5 @@ public class SmartPhoneTest {
             phone.turnOff();
             System.out.println();
         }
-
-
     }
 }
